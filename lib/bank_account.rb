@@ -30,7 +30,7 @@ class BankAccount
   
   
   def close_account
-    @status = "closed"
+    @status == "closed"
   end
   
   
