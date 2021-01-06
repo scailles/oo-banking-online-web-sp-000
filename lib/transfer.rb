@@ -31,9 +31,10 @@ class Transfer
       puts "Transaciton was already completed."
       
     else 
-      sender.balance -= amount
-      receiver.balance += amount
-      @status == "complete"
+     @sender.deposit( @amount * -1 ) 
+      @receiver.deposit( @amount )
+      @status = "complete"
+    end
     end
   end
   
