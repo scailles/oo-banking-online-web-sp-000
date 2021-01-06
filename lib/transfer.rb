@@ -13,7 +13,7 @@ class Transfer
   
   
   def valid?
-    if 
+    if sender.valid?
   
   
   
