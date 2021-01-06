@@ -32,6 +32,8 @@ class Transfer
       @status = "rejected"
       puts "Transaction rejected. Please check your account balance."
     elsif @sender.status == "closed"
+       @status = "rejected"
+      puts "Transaction rejected. Please check your account balance."
     
     else
       @status = "rejected"
