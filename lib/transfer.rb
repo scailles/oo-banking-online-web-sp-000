@@ -24,8 +24,8 @@ class Transfer
   def execute_transaction
     if sender.valid? && receiver.valid? && sender.balance > amount
       @status = "complete"
-      @sender.balance -= amount
-      @receiver.balance += amount
+      @sender.balance -= @amount
+      @receiver.balance += @amount
     elsif @status == "complete"
       puts "Transaction was already excecuted."
     else "could not be completed"
