@@ -17,7 +17,7 @@ class BankAccount
     
     
   def display_balance
-    @balance
+    print @balance
   end
   
   
