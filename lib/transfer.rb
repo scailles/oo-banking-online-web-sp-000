@@ -27,10 +27,15 @@ class Transfer
       status = "rejected"
       puts "could not be completed."
     
-    elsif @status = "complete"
+    elsif @status == "completed"
       puts "Transaciton was already completed."
       
     else 
+      sender.balance -= amount
+      receiver.balance += amount
+      @status == "complete"
+    end
+  end
   
   
   
