@@ -23,7 +23,7 @@ class Transfer
   
 
   def execute_transaction
-    if valid? = false
+    if valid? == false
       puts "Transaction rejected. Please check your account balance."
 
     elsif @status == "complete"
