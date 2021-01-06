@@ -1,6 +1,6 @@
 class Transfer
   
-  attr_accessor :transfer, :sender, :receiver, :pending
+  attr_accessor :transfer, :sender, :receiver
   
   
   
